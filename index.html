@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora básica com JavaScript</h1>
+        <form id="form">
+            <label for="first-Number">Insira o Primeiro Número:</label>
+            <input type="number" name="" id="first-Number" placeholder="Primeiro Número" required>
+            <label for="second-Number">Insira o Segundo Número:</label>
+            <input type="number" name="" id="second-Number" placeholder="Segundo Número" required >
+            <div class="operacoes">
+                <button type="button" id="soma" onclick="somar()">+</button>
+                <button type="button" id="subtracao" onclick="subtrair()">-</button>
+                <button type="button" id="divisao" onclick="dividir()">/</button>
+                <button type="button" id="multiplicacao" onclick="multiplicar()">x</button>
+            </div>
+            <button type="button" id="resultado" onclick="clicar()" >Resultado</button>
+            <p id="result">-</p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
